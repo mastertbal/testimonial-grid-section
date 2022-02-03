@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Outfit:wght@600&family=Roboto&display=swap');
+
+* {
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+body
+{
+    background-color: rgb(219, 245, 255);
+}
+
+.main-section
+{
+    display: grid;
+    grid-gap: 20px;
+    max-width: 1200px;
+    grid-template-areas: 
+    "one one two three"
+    "four five five three";
+    margin: 5% auto;
+}
+
+.main-1
+{
+    grid-area: one;
+}
+
+.main-2
+{
+    grid-area: two;
+}
+
+.main-3
+{
+    grid-area: three;
+}
+
+.main-4
+{
+    grid-area: four;
+}
+
+.main-5
+{
+    grid-area: five;
+}
+
+.main-1, .main-2, .main-3, .main-4, .main-5
+{
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.main-1, .main-2, .main-5
+{
+    color: white;
+}
+
+.main-3, .main-4
+{
+    color: #222;
+}
+
+.main-1
+{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.main-2
+{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.main-3, .main-4
+{
+    background-color: #fff;
+}
+
+.main-5
+{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.main-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-div img
+{
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 40px;
+}
+
+#patrick
+{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+#status
+{
+    margin-top: 0;
+    opacity: 0.5;
+}
+
+#name
+{
+    margin-bottom: 0;
+}
+
+#first-p
+{
+    font-weight: bold;
+}
+
+#second-p
+{
+    opacity: 0.5;
+}
+
+#info
+{
+    text-align: center;
+    margin-top: 0;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+/* Media queries */
+@media (max-width: 800px) 
+{
+    .main-section
+    {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "one one two two"
+        "three three four four"
+        "five five five five";
+        margin: 10% auto;;
+    }
+}
+
+@media (max-width: 550px) 
+{
+    .main-section
+    {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "one one one one"
+        "two two two two"
+        "three three three three"
+        "four four four four"
+        "five five five five";
+        margin: 10% auto;;
+    }
+}
+
