@@ -45,7 +45,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS grid and css flexbox
+- CSS properties such as grid and flexbox
 
 ## Author
 - Linkedin -  [My Linkedin](tps://www.linkedin.com/in/oluwatobi-balogun-536044160)
